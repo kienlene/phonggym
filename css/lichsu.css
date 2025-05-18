@@ -1,0 +1,152 @@
+/* Reset mặc định */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* Thanh điều hướng */
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.search input {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+.user-info {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Container chính */
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    margin: 10px 0;
+}
+
+.sidebar .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #28a745;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
